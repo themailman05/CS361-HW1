@@ -2,7 +2,8 @@
 #define closed_c 
 
 #include "closed.h" 
-#include "hardware.h" 
+#include "hardware.h"
+#include "hardware.c" 
 #include "statemodel.h"
 
 state*  open_button_pressed() 
