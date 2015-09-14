@@ -1,4 +1,3 @@
-bject files
 *.o
 *.ko
 *.obj
@@ -30,4 +29,3 @@ bject files
 
 # Debug files
 *.dSYM/
-
