@@ -1,20 +1,20 @@
 #ifndef statemodel_c 
 #define statemodel_c 
+
 #include "statemodel.h" 
 #include <stdlib.h> 
 
 // Define the initial state. 
-static state* current_state = &opened; 
+static state_t* current_state = &opened; 
 
 // Define the functions. 
 
-void 
-handle_event(event current_event) 
+void handle_event( event current_event) 
 {   
-  state* next_state;   
+  state_t* next_state;   
 
   next_state = NULL;
-  switch(current_event) // exit current_state and have the appropriate effect     
+  switch( current_event )//exit current_state and have the appropriate effect   
     {     
     case CLOSE_BUTTON_PRESSED:       
       next_state = current_state->close_button_pressed();       

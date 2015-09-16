@@ -1,19 +1,15 @@
-#ifndef statemode_h 
+#ifndef statemodel_h 
 #define statemodel_h 
-#include <stdlib.h> 
-#include "hardware.h" 
-#include "state.h" 
 
-// Declare all of the states used in the state model. 
+#include <stdlib.h>
+#include "hardware.h"
+#include "state.h"
 
-extern state closed; 
-extern state closing; 
-extern state opened; 
-extern state opening; 
+extern state_t closed;
+extern state_t closing;
+extern state_t opened;
+extern state_t opening;
 
-// Declare all of the functions. 
-void 
-handle_event(event current_event); 
+void handle_event(event current_event);
 
-
-#endif 
+#endif

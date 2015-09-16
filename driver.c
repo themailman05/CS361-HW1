@@ -2,7 +2,7 @@
 #define main_c 
 
 #include <stdio.h>
-#include "statemodel.c"
+#include "statemodel.h"
 #include "hardware.h"
 
 void main() {

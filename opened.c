@@ -1,10 +1,22 @@
-##ifndef opened_c 
+#ifndef opened_c 
 #define opened_c 
+
 #include "opened.h" 
 #include "hardware.h" 
 #include "statemodel.h" 
 
-state*  close_button_pressed() 
+state_t opened = {
+   close_button_pressed,    // close_button_pressed
+   default_event_handler,   // closed_detected
+   default_event_handler,   // open_button_pressed
+   default_event_handler,   // opened_detected
+   entry_to,                // entry
+   exit_from                // exit 
+}; 
+
+
+
+state_t*  close_button_pressed() 
 {
    exit_from();
    return &closing;

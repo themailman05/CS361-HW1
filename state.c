@@ -5,18 +5,13 @@
 
 // Define all of the functions that are not exposed 
 // by the header file. 
-state*  
-return_null() {
+state_t * default_event_handler()
+{
   return NULL; 
 } 
 
-void  
-return_void() 
-{ 
+void default_action() 
+{
+ 
 } 
-
-// Define the pointers to the default event handler and default action
-event_handler* default_event_handler = return_null; 
-action* default_action = return_void; 
-
 #endif
